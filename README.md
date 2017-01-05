@@ -8,3 +8,7 @@ A developer by heart, loves coding challenges, loves building software.
 Interests
 ---------
 Java, Web-Development, Android, iOS, webMethods, open-source
+
+Contact
+-------
+nope :D
