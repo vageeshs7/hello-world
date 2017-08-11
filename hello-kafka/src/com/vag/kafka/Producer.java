@@ -19,7 +19,7 @@ public class Producer {
 
       //Configure the Producer
       Properties configProperties = new Properties();
-      configProperties.put("metadata.broker.list","192.168.17.128:9092");
+      configProperties.put("metadata.broker.list","localhost:9092");
       configProperties.put("key.serializer.class","com.vag.kafka.Encoder");
       configProperties.put("serializer.class","com.vag.kafka.Encoder");
       configProperties.put("partitioner.class", "com.vag.kafka.SimplePartitioner");
