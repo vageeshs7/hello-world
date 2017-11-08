@@ -20,6 +20,7 @@ public class TimeServerHandler extends IoHandlerAdapter {
         if(msgStr.trim().equalsIgnoreCase("stop"))
         {
             session.closeNow();
+            System.out.println("Disconnected from :" + session.getRemoteAddress().toString());
             return;
         }
 
@@ -39,6 +40,6 @@ public class TimeServerHandler extends IoHandlerAdapter {
     @Override
     public void sessionCreated(IoSession session) throws Exception {
         System.out.println("Connection accepted from : " + session.getRemoteAddress().toString());
-        session.write("Hello\n".toString());
+        session.write("Hello");
     }
 }
